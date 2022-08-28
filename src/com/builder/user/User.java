@@ -42,17 +42,19 @@ public class User {
     }
 
     public static class Builder{
+        //Here firstName and LastName are required field and age, phone and address are optional
         private final String firstName;
         private final String lastName;
         private int age;
         private String phone;
         private String address;
 
+
         public Builder(String firstName,String lastName){
             this.firstName=firstName;
             this.lastName=lastName;
         }
-        
+
         public Builder age(int age){
             this.age=age;
             return this;
@@ -67,7 +69,6 @@ public class User {
         }
         public User build(){
             User user=new User(this);
-
             return user;
         }
     }

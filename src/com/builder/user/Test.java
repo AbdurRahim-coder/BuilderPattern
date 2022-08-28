@@ -2,6 +2,8 @@ package com.builder.user;
 
 public class Test {
     public static void main(String[] args) {
+
+        //Required field call by contractor
         User user1=new User.Builder("Abdur","Rahim")
                 .age(24)
                 .phone("01843528797")
@@ -12,6 +14,7 @@ public class Test {
                 .address("Banoni")
                 .build();
         System.out.println(user2);
+
         System.out.println(new User.Builder("Tamin","Iqbal")
                 .build());
     }
